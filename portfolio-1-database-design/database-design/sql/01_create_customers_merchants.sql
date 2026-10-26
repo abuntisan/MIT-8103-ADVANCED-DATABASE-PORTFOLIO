@@ -8,7 +8,7 @@ CREATE TABLE customers (
     customer_id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     customer_ref VARCHAR(20) NOT NULL UNIQUE,
     full_name VARCHAR(100) NOT NULL,
-    email VARCHAR(150) UNIQUE
+    email VARCHAR(150) NOT NULL
 );
 
 CREATE TABLE merchants (
