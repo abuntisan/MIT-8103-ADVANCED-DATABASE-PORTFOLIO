@@ -29,19 +29,12 @@ All data used in this project will be fictional.
 - Integrity constraints
 - Normalisation explanation
 - Test data and query results
-- Screenshots of the implementation
 
 ## 5. Tools
 
 - PostgreSQL
 - pgAdmin
 - GitHub
-
-## 6. Progress
-
-**Status:** In progress
-
-The repository has been created, and the initial database design is being prepared.
 
 ## 7. Technical Reflection
 
