@@ -18,14 +18,23 @@ FinCore Payments stores customer, merchant, terminal, transaction, and reversal 
 
 The proposed design must consider data availability, consistency, performance, security, and the accuracy of payment records.
 
-## 4. Planned Activities
+## 4. Proposed Distributed Database Architecture
 
-- Describe a suitable distributed database architecture for FinCore Payments.
-- Explain how replication could improve availability and support recovery.
-- Propose a sharding strategy for handling growing transaction volumes.
-- Discuss consistency requirements for transaction records and reversals.
-- Investigate a cloud database option or prepare a documented deployment proposal.
-- Record screenshots, configuration details, test results, or architecture diagrams where applicable.
+The proposed FinCore Payments architecture uses a cloud-hosted PostgreSQL database as the primary relational database for customers, merchants, payment terminals, transactions, and reversals.
+
+The architecture will consist of:
+
+- **Primary database:** Handles payment transactions, updates, and other write operations.
+- **Standby replica:** Maintains a replicated copy of the primary database and supports failover if the primary server becomes unavailable.
+- **Read replicas:** Support reporting, analytics, and other read-heavy operations to reduce the workload on the primary database.
+- **Backup storage:** Stores regular database backups to support recovery in the event of data loss or system failure.
+- **Application layer:** Connects payment-processing services securely to the database.
+
+The primary database will remain responsible for authoritative payment records. Replication and failover mechanisms will improve availability, while appropriate transaction controls will help maintain the accuracy and consistency of financial records.
+
+As transaction volumes increase, the system can introduce database partitioning and, where necessary, sharding to distribute transaction data across multiple database nodes.
+
+This architecture is a proposed design for FinCore Payments and does not represent an actual cloud deployment.
 
 ## 5. Expected Deliverables
 
