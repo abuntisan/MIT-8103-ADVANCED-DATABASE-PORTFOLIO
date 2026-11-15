@@ -119,35 +119,32 @@ Applying normalisation principles helps reduce data redundancy and makes the dat
 
 ## 6. Database Implementation
 
-The relational database was implemented using PostgreSQL, with pgAdmin used as the database administration interface.
+The FinCore Payments relational database was implemented using PostgreSQL, with pgAdmin used as the database administration interface.
 
 The implementation involved:
 
 - Creating the FinCore Payments database.
-- Creating the required relational tables.
-- Defining table attributes and data types.
+- Creating the five relational tables: customers, merchants, payment_terminals, payment_transactions and transaction_reversals.
+- Defining table attributes and appropriate data types.
 - Establishing primary and foreign key relationships.
-- Applying appropriate integrity constraints.
-- Inserting sample records for testing.
+- Applying integrity constraints, including NOT NULL, UNIQUE and CHECK constraints.
+- Inserting sample records into all five tables.
 - Executing SQL statements to examine the database structure and relationships.
 
-The implementation provides the relational foundation for subsequent activities involving query optimisation and transaction management.
+The sample records provided data for working with the database and demonstrated how information is organised across the related tables.
 
 ## 7. Testing and Validation
 
-Testing was considered an important part of the database implementation process.
+The database implementation was reviewed using PostgreSQL and pgAdmin.
 
-The database structure and relationships were evaluated using SQL and PostgreSQL administration tools.
+The activities completed included:
 
-The validation activities focus on:
+- Confirming the creation of the five required tables.
+- Inserting sample records into the tables.
+- Working with the database structure and defined relationships.
+- Using SQL to examine the stored records.
 
-- Confirming that the required tables were created.
-- Checking primary and foreign key relationships.
-- Confirming that sample records can be stored and retrieved.
-- Checking that integrity constraints prevent invalid data.
-- Verifying that related records can be accessed through SQL queries.
-
-Supporting SQL scripts, screenshots and execution results are included in the portfolio folder.
+Although integrity constraints were defined in the database schema, separate tests involving deliberately invalid records were not performed as part of this exercise.
 
 ## 8. Tools and Technologies
 
