@@ -103,15 +103,15 @@ The portfolio contains:
 
 **Status: Completed**
 
-The practical implementation has commenced.
+All practical activities for Portfolio 2 have been completed.
 
-The relational database and sample transaction data from Portfolio 1 have been verified. Analytical SQL queries have been executed, and single-column and composite indexing techniques have been investigated.
+The implementation covered analytical SQL queries, single-column and composite index creation, query execution-plan analysis and performance comparisons using PostgreSQL.
 
-Execution plans have also been examined to understand PostgreSQL's use of bitmap index scans, bitmap heap scans and sequential scans.
+The exercises demonstrated PostgreSQL's use of Bitmap Index Scans, Bitmap Heap Scans and Sequential Scans under different query conditions.
 
-Performance comparison results and technical optimisation findings have been documented.
+All SQL scripts, query outputs, execution-plan screenshots and supporting technical documentation have been uploaded to this repository.
 
-Further review and consolidation of the portfolio deliverables remain outstanding.
+The practical work and supporting evidence are documented in the `sql/`, `results/` and `documentation/` directories.
 
 ## 7. Technical Reflection
 
