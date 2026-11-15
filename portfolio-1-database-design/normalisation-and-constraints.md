@@ -94,6 +94,4 @@ Based on the intended relationships and functional dependencies, the design appe
 
 ## 4. Conclusion
 
-The FinCore Payments database uses primary keys, foreign keys, unique constraints, NOT NULL constraints, CHECK constraints, and default values to help maintain data integrity.
-
-Separating the data into five related tables reduces unnecessary repetition and supports the principles of 1NF, 2NF, and 3NF. I will verify the implemented constraints against PostgreSQL and test them with sample data before finalising the portfolio.
+The FinCore Payments database uses primary keys, foreign keys, unique constraints, NOT NULL constraints, CHECK constraints and default values to support data integrity. Sample records were inserted into all five tables. Although the constraints are defined in the schema, separate tests using deliberately invalid records were not performed.
