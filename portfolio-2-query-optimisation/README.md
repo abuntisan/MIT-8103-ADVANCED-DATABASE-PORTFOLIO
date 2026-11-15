@@ -101,7 +101,7 @@ The portfolio contains:
 
 ## 6. Progress
 
-**Status: In Progress**
+**Status: Completed**
 
 The practical implementation has commenced.
 
