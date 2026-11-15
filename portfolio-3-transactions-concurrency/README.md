@@ -125,7 +125,20 @@ The row-level locking experiment also demonstrated how PostgreSQL handles compet
 
 These concepts are particularly important in fintech systems, where transaction consistency and the integrity of financial records are essential.
 
-## 8. Conclusion
+
+## 8. Progress
+
+**Status: Completed**
+
+All practical activities for Portfolio 3 have been completed using PostgreSQL 18 and pgAdmin.
+
+The implementation covered transaction processing with COMMIT and ROLLBACK, READ COMMITTED isolation using concurrent database sessions, and row-level locking using SELECT FOR UPDATE.
+
+The SQL scripts, execution screenshots and supporting technical documentation have been uploaded to the repository.
+
+The practical implementation and evidence are maintained in the `sql/`, `results/` and `documentation/` directories.
+
+## 9. Conclusion
 
 This portfolio demonstrates practical application of transaction management, isolation and concurrency control using PostgreSQL 18.
 
